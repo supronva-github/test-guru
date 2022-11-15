@@ -48,10 +48,10 @@ ActiveRecord::Schema.define(version: 2022_11_14_005909) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
     t.integer "age"
-    t.string "email"
+    t.string "email", null: false
     t.string "role"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
