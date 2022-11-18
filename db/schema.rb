@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_14_005909) do
+ActiveRecord::Schema.define(version: 2022_11_16_104334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,16 +48,25 @@ ActiveRecord::Schema.define(version: 2022_11_14_005909) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
     t.integer "age"
-    t.string "email"
+    t.string "email", null: false
     t.string "role"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "users_tests", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "test_id", null: false
+    t.index ["test_id"], name: "index_users_tests_on_test_id"
+    t.index ["user_id"], name: "index_users_tests_on_user_id"
+  end
+
   add_foreign_key "answers", "questions"
   add_foreign_key "questions", "tests"
   add_foreign_key "tests", "categories"
+  add_foreign_key "users_tests", "tests"
+  add_foreign_key "users_tests", "users"
 end
