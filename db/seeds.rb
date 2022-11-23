@@ -22,12 +22,12 @@ categories = Category.create([
                              ])
 
 tests = Test.create([
-                      { title: 'Принципы ООП', level: 1, category: categories[1] },
-                      { title: 'Модель OSI', level: 1, category: categories[2] },
-                      { title: 'Linux OS', level: 1, category: categories[2] },
-                      { title: 'Ruby on Rails', level: 3, category: categories[1] },
-                      { title: 'HTML Styles CSS', level: 2, category: categories[0] },
-                      { title: 'Kubernetes', level: 3, category: categories[2] }
+                      { title: 'Принципы ООП', level: 1, category: categories[1], author: users[2] },
+                      { title: 'Модель OSI', level: 1, category: categories[2], author: users[2] },
+                      { title: 'Linux OS', level: 1, category: categories[2], author: users[2] },
+                      { title: 'Ruby on Rails', level: 3, category: categories[1], author: users[1] },
+                      { title: 'HTML Styles CSS', level: 2, category: categories[0], author: users[2] },
+                      { title: 'Kubernetes', level: 3, category: categories[2], author: users[2] }
                     ])
 
 questions = Question.create([
