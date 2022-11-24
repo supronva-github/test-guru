@@ -5,7 +5,7 @@ class Test < ApplicationRecord
   has_many :users, through: :users_tests
   belongs_to :author, class_name: 'User', foreign_key: :author_id
 
-  validates :title, presence: true
+  validates :title, presence: true, uniqueness: {scope: :level, message: "There can only be one test with the same name and level"}
   validates :level, numericality: {only_integer: true, greater_than_or_equal_to: 0}
   scope :easy, -> {by_level(0..1)}
   scope :medium, -> {by_level(2..4)}
