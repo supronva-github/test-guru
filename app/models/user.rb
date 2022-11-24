@@ -3,6 +3,8 @@ class User < ApplicationRecord
   has_many :tests, through: :users_tests
   has_many :owner_tests, class_name: 'Test', foreign_key: :author_id
 
+  validates :email, presence: true
+
   def test_by_level(level)
     tests.by_level(level)
   end
