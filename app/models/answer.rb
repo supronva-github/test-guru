@@ -4,13 +4,13 @@ class Answer < ApplicationRecord
   belongs_to :question
 
   validates :body, presence: true
-  validate :validate_count_in_one_question, on: :create
+  validate :validate_question_answer_limit, on: :create
 
   scope :correct, -> { where(correct: true) }
 
   private
 
-  def validate_count_in_one_question
+  def validate_question_answer_limit
     if question.answers.count >= MAX_COUNT
       errors.add(:base,
                  "Уже создано больше 4х ответов на данный вопрос: #{question.body}")
