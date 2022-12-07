@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   before_action :find_test, only: %i[index create new]
-  before_action :find_question, only: [:show]
+  before_action :find_question, only: [:show, :destroy]
 
   rescue_from ActiveRecord::RecordNotFound, with: :rescue_question_not_found
 
@@ -9,15 +9,16 @@ class QuestionsController < ApplicationController
     render inline: 'Тесты: <%@questions.each do |q| %><p><%= q.body %></p><% end %>'
   end
 
-  def show
-    render plain: @question.body
-  end
-
   def create
     @question = @test.questions.create(question_params)
     render inline: 'Вопрос: <%= @question.body %> - создан'
   end
 
+  def destroy
+    @question.destroy
+    render plain: "Вопрос #{@question.id} - удален"
+  end
+  
   private
 
   def find_test
