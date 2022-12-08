@@ -10,8 +10,12 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = @test.questions.create(question_params)
-    render inline: 'Вопрос: <%= @question.body %> - создан'
+    @question = @test.questions.new(question_params)
+    if @question.save
+      render inline: 'Вопрос: <%= @question.body %> - создан'
+    else
+      render plain: 'Error'
+    end
   end
 
   def destroy
