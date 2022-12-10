@@ -8,12 +8,16 @@ class QuestionsController < ApplicationController
     @questions = @test.questions
   end
 
+  def new
+    @question = Question.new
+  end
+
   def create
     @question = @test.questions.new(question_params)
     if @question.save
-      render inline: 'Вопрос: <%= @question.body %> - создан'
+      redirect_to @question
     else
-      render plain: 'Error'
+      render :new
     end
   end
 

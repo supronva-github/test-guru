@@ -1,7 +1,19 @@
 <p> Создание нового вопроса:</p>
-<form action="/tests/<%= params[:test_id] %>/questions/" method="post">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <label for="question-body">Вопрос</label><br>
-  <input type="text" id="question-body" name="question[body]"><br><br>
-  <input type="submit" value="Create">
-</form>
+
+<%= form_with model: [@test, @question] do |form| %>
+  <% if @question.errors.present? %>
+    <div>
+      <p><%= pluralize(@question.errors.count, 'error')%> detected:</p>
+    </div>
+    <ul>
+      <% @question.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <p>
+    <%= form.label :body %>
+    <%= form.text_field :body %>
+  </p>
+  <p><%= form.submit %></p>
+<% end %>
