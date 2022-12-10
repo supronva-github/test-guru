@@ -1,0 +1,19 @@
+<p> Обновление вопроса:</p>
+
+<%= form_with model: [@question] do |form| %>
+  <% if @question.errors.present? %>
+    <div>
+      <p><%= pluralize(@question.errors.count, 'error')%> detected:</p>
+    </div>
+    <ul>
+      <% @question.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <p>
+    <%= form.label :body %>
+    <%= form.text_field :body %>
+  </p>
+  <p><%= form.submit %></p>
+<% end %>
