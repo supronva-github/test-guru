@@ -6,7 +6,6 @@ class QuestionsController < ApplicationController
 
   def index
     @questions = @test.questions
-    render inline: 'Тесты: <%@questions.each do |q| %><p><%= q.body %></p><% end %>'
   end
 
   def create
