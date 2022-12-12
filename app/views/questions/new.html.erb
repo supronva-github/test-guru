@@ -1,4 +1,4 @@
-<p> Создание нового вопроса:</p>
+<h1><%= question_header(@question) %></h1>
 
 <%= form_with model: [@test, @question] do |form| %>
   <% if @question.errors.present? %>
