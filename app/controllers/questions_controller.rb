@@ -31,7 +31,7 @@ class QuestionsController < ApplicationController
 
   def destroy
     @question.destroy
-    render plain: "Вопрос #{@question.id} - удален"
+    redirect_to test_questions_path(@question.test)
   end
   
   private
