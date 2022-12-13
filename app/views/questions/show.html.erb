@@ -1,6 +1,4 @@
 <p><%= @question.body %></p>
-<form action="/questions/<%= params[:id] %>" method="post" onSubmit="return confirm('Вы точно хотите удалить данный вопрос? Есди - да, то нажмите OK');">
-  <input type="hidden" name="_method" value="DELETE">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <input type="submit" value="Delete">
-</form>
+
+<%= link_to 'Edit', edit_question_path(@question) %>
+<%= link_to 'Back', test_questions_path(@question.test) %>
