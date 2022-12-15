@@ -33,7 +33,7 @@ class QuestionsController < ApplicationController
     @question.destroy
     redirect_to test_questions_path(@question.test)
   end
-  
+
   private
 
   def find_test
