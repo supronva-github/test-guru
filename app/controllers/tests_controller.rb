@@ -1,6 +1,6 @@
 class TestsController < ApplicationController
-  before_action :find_test, only %i[start]
-  before_action :find_user, only %i[start]
+  before_action :find_test, only: %i[start]
+  before_action :find_user, only: %i[start]
 
   def index
     @tests = Test.all
@@ -14,7 +14,7 @@ class TestsController < ApplicationController
   private
 
   def find_test
-    @test = Test.find(params(:id))
+    @test = Test.find(params[:id])
   end
 
   def find_user
