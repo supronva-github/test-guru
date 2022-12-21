@@ -1,6 +1,6 @@
 class TestPassagesController < ApplicationController
   before_action :find_test_passage, only: %i[show result update]
-  
+
   def show
   end
 
@@ -8,6 +8,8 @@ class TestPassagesController < ApplicationController
   end
 
   def update
+    @test_passage.accept!(params[:answers_ids])
+    render :show
   end
 
   private
