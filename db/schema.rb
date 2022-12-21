@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 2022_12_15_140215) do
     t.bigint "user_id", null: false
     t.bigint "test_id", null: false
     t.integer "correct_questions", default: 0
-    t.bigint "correct_question_id"
-    t.index ["correct_question_id"], name: "index_test_passages_on_correct_question_id"
+    t.bigint "current_question_id"
+    t.index ["current_question_id"], name: "index_test_passages_on_current_question_id"
     t.index ["test_id"], name: "index_test_passages_on_test_id"
     t.index ["user_id"], name: "index_test_passages_on_user_id"
   end
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 2022_12_15_140215) do
 
   add_foreign_key "answers", "questions"
   add_foreign_key "questions", "tests"
-  add_foreign_key "test_passages", "questions", column: "correct_question_id"
+  add_foreign_key "test_passages", "questions", column: "current_question_id"
   add_foreign_key "test_passages", "tests"
   add_foreign_key "test_passages", "users"
   add_foreign_key "tests", "categories"
