@@ -1,5 +1,5 @@
 class TestPassage < ApplicationRecord
-  SUCCESS_RATE = 85.freeze
+  SUCCESS_RATE = 85
 
   belongs_to :user
   belongs_to :test
@@ -18,19 +18,21 @@ class TestPassage < ApplicationRecord
     save!
   end
 
-  def correct_answer?(answer_ids)
-    correct_answers_count = correct_answers.count
-
-    (correct_answers_count == correct_answers.where(id: answer_ids).count) &&
-      correct_answers_count == answer_ids.count
-  end
-
   def percent_correct_answers
     (correct_questions.to_f * 100 / test.questions.count).to_i
   end
   
   def success?
     percent_correct_answers >= SUCCESS_RATE
+  end
+
+  private
+  
+  def correct_answer?(answer_ids)
+    correct_answers_count = correct_answers.count
+
+    (correct_answers_count == correct_answers.where(id: answer_ids).count) &&
+      correct_answers_count == answer_ids.count
   end
 
   def correct_answers
