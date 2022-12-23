@@ -1,17 +1,9 @@
 module TestPassagesHelper
-  def color_result(test_passage)
-    if test_passage.success?
-      'success'
-    else
-      'fail'
-    end
-  end
-
   def test_result(test_passage)
     if test_passage.success?
-      'Тест выполнен'
+      "<p> Ваш результат: <span class='success'>#{@test_passage.percent_correct_answers}%</span> Тест выполнен </p>".html_safe
     else
-      'Тест не выполнен'
+      "<p> Ваш результат: <span class='fail'>#{@test_passage.percent_correct_answers}%</span> Тест не выполнен </p>".html_safe
     end
   end
 end
