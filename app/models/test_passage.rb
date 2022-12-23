@@ -7,7 +7,7 @@ class TestPassage < ApplicationRecord
 
   before_save :before_save_set_next_question
 
-  def comleted?
+  def completed?
     current_question.nil?
   end
 
