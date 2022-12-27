@@ -2,8 +2,6 @@ class QuestionsController < ApplicationController
   before_action :find_test, only: %i[index create new]
   before_action :find_question, only: %i[show destroy edit update]
 
-  rescue_from ActiveRecord::RecordNotFound, with: :rescue_question_not_found
-
   def index
     @questions = @test.questions
   end
@@ -33,7 +31,7 @@ class QuestionsController < ApplicationController
     @question.destroy
     redirect_to test_questions_path(@question.test)
   end
-  
+
   private
 
   def find_test
@@ -42,10 +40,6 @@ class QuestionsController < ApplicationController
 
   def find_question
     @question = Question.find(params[:id])
-  end
-
-  def rescue_question_not_found
-    render plain: 'Вопрос не был найден'
   end
 
   def question_params
