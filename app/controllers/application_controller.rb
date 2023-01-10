@@ -3,7 +3,8 @@ class ApplicationController < ActionController::Base
     rescue_not_found(e)
   end
 
-  helper_method :current_user
+  helper_method :current_user,
+                :logged_in?
 
   private
   
