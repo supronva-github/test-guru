@@ -10,9 +10,9 @@
 puts 'Data is loading'
 
 users = User.create([
-                      { first_name: 'Vitaliy', last_name: 'Bax', email: 'v.bax@gmail.com' },
-                      { first_name: 'Roma', last_name: 'Kirpich', email: 'r.kirpich@gmail.com' },
-                      { first_name: 'Maksim', last_name: 'Orel', email: 'm.orel@gmail.com' }
+                      { first_name: 'Vitaliy', last_name: 'Bax', email: 'v.bax@gmail.com', password: 'qwerty' },
+                      { first_name: 'Roma', last_name: 'Kirpich', email: 'r.kirpich@gmail.com', password: 'qwerty' },
+                      { first_name: 'Maksim', last_name: 'Orel', email: 'm.orel@gmail.com', password: 'qwerty' }
                     ])
 
 categories = Category.create([
@@ -55,14 +55,4 @@ answers = Answer.create([
                           { body: 'Абстракция, наследование, инкапсуляция, полиморфизм', correct: true,
                             question: questions[0] }
                         ])
-
-users_tests = TestPassage.create([
-                                 { user: users[2], test: tests[1] }, 
-                                 { user: users[2], test: tests[2] },
-                                 { user: users[0], test: tests[0] },
-                                 { user: users[0], test: tests[4] },
-                                 { user: users[1], test: tests[5] },
-                                 { user: users[1], test: tests[2] }
-                               ])
-
 puts 'Data loaded!'
