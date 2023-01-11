@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
                 :logged_in?
 
   private
-  
+
   def rescue_not_found(e)
     render plain: e.message
   end
