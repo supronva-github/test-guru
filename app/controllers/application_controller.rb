@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
-  
+
   rescue_from ActiveRecord::RecordNotFound do |e|
     rescue_not_found(e)
   end
@@ -16,6 +16,7 @@ class ApplicationController < ActionController::Base
 
   def authenticate_user!
     unless current_user
+      cookies[:preview_path] = request.fullpath
       redirect_to login_path
     end
   end

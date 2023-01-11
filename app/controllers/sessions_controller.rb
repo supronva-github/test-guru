@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to tests_path
+      path_to_redirect = cookies.delete(:preview_path)
+      redirect_to path_to_redirect || root_path
     else
       flash.now[:alert] = 'Verify your Email and Password please'
       render :new
