@@ -11,8 +11,6 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
 
-  has_secure_password
-
   def test_by_level(level)
     tests.by_level(level)
   end
