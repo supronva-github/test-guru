@@ -96,6 +96,10 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    launchy (2.5.2)
+      addressable (~> 2.8)
+    letter_opener (1.8.1)
+      launchy (>= 2.2, < 3)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -112,6 +116,8 @@ GEM
     msgpack (1.6.0)
     nio4r (2.5.8)
     nokogiri (1.13.9-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.4.4)
@@ -224,6 +230,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-darwin-22
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
@@ -231,6 +238,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise (~> 4.0)
   jbuilder (~> 2.7)
+  letter_opener
   listen (~> 3.3)
   pg
   pry
