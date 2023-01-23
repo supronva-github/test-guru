@@ -1,6 +1,6 @@
 class Admin::TestsController < Admin::BaseController
   before_action :find_test, only: %i[show edit update destroy]
-  
+
   def index
     @tests = Test.all
   end
@@ -20,7 +20,7 @@ class Admin::TestsController < Admin::BaseController
 
   def update
     if @test.update(test_params)
-      redirect_to @tests
+      redirect_to [:admin, @test]
     else
       render :edit
     end
