@@ -3,6 +3,7 @@ ru:
     models:
       answer: 'Ответ'
       question: 'Вопрос'
+      test: 'Тест'
 
   attributes:
     answer:
@@ -10,6 +11,10 @@ ru:
       correct: 'Правильность'
     question:
       body: 'Вопрос'
+    test:
+      title: 'Название'
+      level: 'Сложность'
+      category: 'Категория'
 
   errors:
     messages:

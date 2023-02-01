@@ -14,12 +14,21 @@ ru:
       question:
         create: 'Создать Вопрос'
         update: 'Обновить Вопрос'
+      test:
+        create: 'Создать Тест'
+        update: 'Обновить Тест'
     label:
       answer:
         body: 'Ответ'
         correct: 'Правильный ответ'
       question:
         body: 'Тема вопроса'
+      test:
+        title: 'Название'
+        level: 'Сложность'
+        category_id: 'Категория'
+    select:
+      prompt: 'Выберите Категорию'
 
   helper_methods:
     answer:
@@ -43,3 +52,18 @@ ru:
         action: 'Действия'
         add_answer: 'Добавить ответ'
         edit_question: 'Редактировать вопрос'
+    tests:
+      index:
+        id: 'Номер'
+        name: 'Название теста'
+        level: 'Сложность'
+        count_question: 'Количество вопросов'
+        action: 'Действия'
+        new_test: 'Создать новый тест'
+        header: 'Список тестов:'
+      show:
+        id: 'Номер'
+        question: 'Вопрос'
+        action: 'Действия'
+        add_question: 'Добавить вопрос'
+        list_questions: "Список вопросов для теста: %{test}"
