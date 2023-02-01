@@ -118,3 +118,15 @@ en:
       total: "Total questions in the test: %{count}"
       currently: "You are currently taking a test: %{number}"
       next: 'Next'
+
+  shared:
+    footer:
+      author: 'Author: Vitaliy Supron'
+      project_description: 'The project is connected with the passage of tests on various topics'
+      course: 'Educational project at Thinknetica online school'
+    header:
+      login: 'Login'
+      logout: LogOut
+      singup: 'Singup'
+      project_name: 'TestGuru'
+      welcome: 'Welcome:'

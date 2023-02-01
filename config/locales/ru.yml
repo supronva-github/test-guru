@@ -88,3 +88,17 @@ ru:
       total: "Всего вопросов в тесте:: %{count}"
       currently: "Вы сейчас проходите тест: %{number}"
       next: 'Далее'
+
+  shared:
+    footer:
+      author: 'Автор: Виталий Супрон'
+      project_description: 'Проект связан с прохождением тестов различных тематик'
+      course: 'Учебный проект в онлайн-школе Thinknetica'
+    header:
+      login: 'Войти'
+      logout: Выйти
+      singup: 'Регистрация'
+      project_name: 'TestGuru'
+      welcome: 'Добро пожаловать:'
+     
+       
