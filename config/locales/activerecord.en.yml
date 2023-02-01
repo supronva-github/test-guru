@@ -4,6 +4,7 @@ en:
       answer: 'Answer'
       question: 'Question'
       test: 'Test'
+      test_passage: 'Test Passage'
 
   attributes:
     answer:
@@ -15,6 +16,8 @@ en:
       title: 'Title'
       level: 'Level'
       category: 'Category'
+    test_passage:
+      correct_questions: 'Correct questions'
 
   errors:
     messages:

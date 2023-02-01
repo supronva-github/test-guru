@@ -67,6 +67,9 @@ en:
     question:
       new_record: "Create a new test question: %{record}"
       not_new_record: "Edit a test question: %{record}"
+    test_passages:
+      test_success: 'Test passed! Your result:'
+      test_failed: 'Test failed! Your result:'
 
   admin:
     questions:
@@ -107,3 +110,11 @@ en:
       header: 'List of available tests:'
     test:
       start: 'Start'
+  test_passages:
+    result: 
+      completed: 'Test Comleted!'
+    show:
+      header: "Passing the test: %{test}"
+      total: "Total questions in the test: %{count}"
+      currently: "You are currently taking a test: %{number}"
+      next: 'Next'

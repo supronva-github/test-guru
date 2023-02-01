@@ -1,4 +1,3 @@
----
 ru:
   common:
     show: 'Просмотреть'
@@ -37,6 +36,10 @@ ru:
     question:
       new_record: "Создать новый ответ к вопросу: %{record}"
       not_new_record: "Отредактировать вопрос теста: %{record}"
+    test_passages:
+      test_success: 'Тест выполнен! Ваш результат:'
+      test_failed: 'Тест не выполнен! Ваш результат:'
+      
  
   admin:
     questions:
@@ -77,3 +80,11 @@ ru:
       header: 'Список доступных тестов:'
     test:
       start: 'Начать'
+  test_passages:
+    result: 
+      completed: 'Тест Завершен!'
+    show:
+      header: "Прохождение теста: %{test}"
+      total: "Всего вопросов в тесте:: %{count}"
+      currently: "Вы сейчас проходите тест: %{number}"
+      next: 'Далее'

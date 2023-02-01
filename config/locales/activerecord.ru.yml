@@ -4,6 +4,7 @@ ru:
       answer: 'Ответ'
       question: 'Вопрос'
       test: 'Тест'
+      test_passage: 'Прохождение Теста'
 
   attributes:
     answer:
@@ -15,6 +16,8 @@ ru:
       title: 'Название'
       level: 'Сложность'
       category: 'Категория'
+    test_passage:
+      correct_questions: 'Правильные ответы'
 
   errors:
     messages:
