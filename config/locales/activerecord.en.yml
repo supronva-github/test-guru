@@ -1,0 +1,13 @@
+en:
+  activerecord:
+    models:
+      answer: 'Answer'
+
+  attributes:
+    answer:
+      body: 'Answer'
+      correct: 'Correct'
+
+  errors:
+    messages:
+      blank: "сan't be blank"

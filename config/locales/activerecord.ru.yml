@@ -1,0 +1,13 @@
+ru:
+  activerecord:
+    models:
+      answer: 'Ответ'
+
+  attributes:
+    answer:
+      body: 'Ответ'
+      correct: 'Правильность'
+
+  errors:
+    messages:
+      blank: 'не может быть пустым'

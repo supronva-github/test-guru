@@ -1,0 +1,23 @@
+---
+ru:
+  common:
+    show: 'Просмотреть'
+    edit: 'Редактировать'
+    delete: 'Удалить'
+    back: 'Назад'
+
+  helpers:
+    submit:
+      answer:
+        create: 'Создать Ответ'
+        update: 'Обновить ответ'
+    label:
+      answer:
+        body: 'Ответ'
+        correct: 'Правильный ответ'
+
+  helper_methods:
+    answers:
+      new_record: "Создать новый ответ к вопросу: %{record}"
+      not_new_recordt: "Редактировать новый ответ к вопросу: %{record}"
+ 
