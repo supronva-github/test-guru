@@ -97,3 +97,13 @@ en:
         action: 'Action'
         add_question: 'Add Question'
         list_questions: "List of questions for the test: %{test}"
+  tests:
+    index:
+      id: 'Id'
+      name: 'Test name'
+      level: 'Level'
+      count_question: 'Count Question'
+      start: 'Start'
+      header: 'List of available tests:'
+    test:
+      start: 'Start'
