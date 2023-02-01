@@ -2,11 +2,14 @@ en:
   activerecord:
     models:
       answer: 'Answer'
+      question: 'Question'
 
   attributes:
     answer:
       body: 'Answer'
       correct: 'Correct'
+    question:
+      body: 'Question'
 
   errors:
     messages:

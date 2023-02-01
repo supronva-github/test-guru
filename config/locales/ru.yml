@@ -10,14 +10,36 @@ ru:
     submit:
       answer:
         create: 'Создать Ответ'
-        update: 'Обновить ответ'
+        update: 'Обновить Ответ'
+      question:
+        create: 'Создать Вопрос'
+        update: 'Обновить Вопрос'
     label:
       answer:
         body: 'Ответ'
         correct: 'Правильный ответ'
+      question:
+        body: 'Тема вопроса'
 
   helper_methods:
-    answers:
+    answer:
       new_record: "Создать новый ответ к вопросу: %{record}"
-      not_new_recordt: "Редактировать новый ответ к вопросу: %{record}"
+      not_new_recordt: "Редактировать ответ к вопросу: %{record}"
+    question:
+      new_record: "Создать новый ответ к вопросу: %{record}"
+      not_new_record: "Отредактировать вопрос теста: %{record}"
  
+  admin:
+    questions:
+      index: 
+        new_question: 'Новый вопрос'
+        id: 'Номер'
+        question: 'Вопрос'
+        action: 'Действия'
+      show:
+        id: 'Номер'
+        answers: 'Ответы'
+        correct: 'правильный/неправильный'
+        action: 'Действия'
+        add_answer: 'Добавить ответ'
+        edit_question: 'Редактировать вопрос'

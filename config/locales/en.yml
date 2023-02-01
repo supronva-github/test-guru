@@ -41,12 +41,35 @@ en:
       answer:
         create: 'Create Answer'
         update: 'Update Answer'
+      question:
+        create: 'Create Question'
+        update: 'Update Question'
     label:
       answer:
         body: 'Answer'
         correct: 'Correct answer'
+      question:
+        body: 'Question subject'
 
   helper_methods:
-    answers:
+    answer:
       new_record: "Create a new question answer: %{record}"
-      not_new_record: "Edit new answer to the question: %{record}"
+      not_new_record: "Edit answer to the question: %{record}"
+    question:
+      new_record: "Create a new test question: %{record}"
+      not_new_record: "Edit a test question: %{record}"
+
+  admin:
+    questions:
+      index: 
+        new_question: 'New Question'
+        id: 'Id'
+        question: 'Question'
+        action: 'Actions'
+      show:
+        id: 'Id'
+        answers: 'Answers'
+        correct: 'true/faslse'
+        action: 'Actions'
+        add_answer: 'Add Answer'
+        edit_question: 'Edit Question'

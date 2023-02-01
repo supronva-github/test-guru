@@ -2,11 +2,14 @@ ru:
   activerecord:
     models:
       answer: 'Ответ'
+      question: 'Вопрос'
 
   attributes:
     answer:
       body: 'Ответ'
       correct: 'Правильность'
+    question:
+      body: 'Вопрос'
 
   errors:
     messages:
