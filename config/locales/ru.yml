@@ -40,7 +40,6 @@ ru:
       test_success: 'Тест выполнен! Ваш результат:'
       test_failed: 'Тест не выполнен! Ваш результат:'
       
- 
   admin:
     questions:
       index: 
@@ -70,6 +69,7 @@ ru:
         action: 'Действия'
         add_question: 'Добавить вопрос'
         list_questions: "Список вопросов для теста: %{test}"
+   
   tests:
     index:
       id: 'Номер'
@@ -80,8 +80,9 @@ ru:
       header: 'Список доступных тестов:'
     test:
       start: 'Начать'
+
   test_passages:
-    result: 
+    result:
       completed: 'Тест Завершен!'
     show:
       header: "Прохождение теста: %{test}"
@@ -117,5 +118,11 @@ ru:
         forgot_password: 'Забыли пароль?'
         confirmation_instructions: 'Не получили письма с подтверждением регистрации?'
 
-     
-       
+  users:
+    sessions:
+        notice: "Привет, %{user}"
+
+  controllers:
+    admin:
+      base:
+        unauthorized: 'Вы не авторизованы для просмотра этой страницы.'
