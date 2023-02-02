@@ -100,5 +100,22 @@ ru:
       singup: 'Регистрация'
       project_name: 'TestGuru'
       welcome: 'Добро пожаловать:'
+
+  devise:
+    sessions:
+      new:
+        login: 'Врата к Гуру'
+        remember_flag: 'Запомнить меня'
+        email_placeholder: 'Введите Email'
+    registrations:
+      new:
+        signup: 'Регистрация Гуру'
+        min_characters_requirment: 'минимум %{length} знаков'
+        email_placeholder: 'Введите Email'
+    shared:
+      links:
+        forgot_password: 'Забыли пароль?'
+        confirmation_instructions: 'Не получили письма с подтверждением регистрации?'
+
      
        

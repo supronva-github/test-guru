@@ -35,6 +35,7 @@ en:
     edit: 'Edit'
     delete: 'Delete'
     back: 'Back'
+    signup: 'Sign Up'
 
   helpers:
     submit:
