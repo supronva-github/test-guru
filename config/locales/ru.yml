@@ -126,3 +126,11 @@ ru:
     admin:
       base:
         unauthorized: 'Вы не авторизованы для просмотра этой страницы.'
+
+  mailers:
+    tests:
+      completed_test:
+        subject: 'Вы только что прошли тест TestGuru!'
+        greeting: 'Ура!'
+        message:  "Поздравляем! Вы завершили тест: %{test_name}"
+        more: 'Больше тестов тут'
