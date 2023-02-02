@@ -1,11 +1,11 @@
 <div>
   <p>
     <%= current_year %> |
-    Автор: Виталий Супрон |
+    <%= t('.author') %>
     <%= github_url('supronva-github', 'test-guru') %>
   </p>
   <p>
-    Проект связан с прохождением тестов различных тематик |
-    <%= link_to "Учебный проект в онлайн-школе Thinknetica", "https://thinknetica.com/", target: :blank %>
+    <%= t('.project_description') %> |
+    <%= link_to t('.course'), "https://thinknetica.com/", target: :blank %>
   </p>
 </div>

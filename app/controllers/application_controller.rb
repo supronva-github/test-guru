@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :configure_sign_up_params, if: :devise_controller?
   before_action :authenticate_user!
+  before_action :set_locale
 
   rescue_from ActiveRecord::RecordNotFound do |e|
     rescue_not_found(e)
@@ -22,5 +23,13 @@ class ApplicationController < ActionController::Base
 
   def configure_sign_up_params
     devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])
+  end
+
+  def default_url_options
+    { lang: I18n.default_locale == I18n.locale ? nil : I18n.locale }
+  end
+
+  def set_locale
+    I18n.locale = I18n.locale_available?(params[:lang]) ? params[:lang] : I18n.default_locale
   end
 end

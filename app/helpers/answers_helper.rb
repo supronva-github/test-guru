@@ -1,9 +1,9 @@
 module AnswersHelper
   def answer_header(answer)
     if answer.new_record?
-      "Create New #{answer.question.body} Answer"
+      I18n.t('helper_methods.answer.new_record', record: answer.question.body)
     else
-      "Edit #{answer.question.body} Answer"
+      I18n.t('helper_methods.answer.not_new_record', record: answer.question.body)
     end
   end
 end

@@ -30,4 +30,125 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  common:
+    show: 'Show'
+    edit: 'Edit'
+    delete: 'Delete'
+    back: 'Back'
+    signup: 'Sign Up'
+
+  helpers:
+    submit:
+      answer:
+        create: 'Create Answer'
+        update: 'Update Answer'
+      question:
+        create: 'Create Question'
+        update: 'Update Question'
+      test:
+        create: 'Create Test'
+        update: 'Update Test'
+    label:
+      answer:
+        body: 'Answer'
+        correct: 'Correct answer'
+      question:
+        body: 'Question subject'
+      test:
+        title: 'Title'
+        level: 'Level'
+        category_id: 'Category'
+    select:
+      prompt: 'Select Category'
+
+  helper_methods:
+    answer:
+      new_record: "Create a new question answer: %{record}"
+      not_new_record: "Edit answer to the question: %{record}"
+    question:
+      new_record: "Create a new test question: %{record}"
+      not_new_record: "Edit a test question: %{record}"
+    test_passages:
+      test_success: 'Test passed! Your result:'
+      test_failed: 'Test failed! Your result:'
+
+  admin:
+    questions:
+      index: 
+        new_question: 'New Question'
+        id: 'Id'
+        question: 'Question'
+        action: 'Actions'
+      show:
+        id: 'Id'
+        answers: 'Answers'
+        correct: 'true/faslse'
+        action: 'Actions'
+        add_answer: 'Add Answer'
+        edit_question: 'Edit Question'
+    tests:
+      index:
+        id: 'Id'
+        name: 'Test name'
+        level: 'Level'
+        count_question: 'Count Question'
+        action: 'Action'
+        new_test: 'Create new test'
+        header: 'Test list:'
+      show:
+        id: 'Id'
+        question: 'Question'
+        action: 'Action'
+        add_question: 'Add Question'
+        list_questions: "List of questions for the test: %{test}"
+    base:
+      alert: 'You are not authorized to view this page.' 
+
+  tests:
+    index:
+      id: 'Id'
+      name: 'Test name'
+      level: 'Level'
+      count_question: 'Count Question'
+      start: 'Start'
+      header: 'List of available tests:'
+    test:
+      start: 'Start'
+
+  test_passages:
+    result:
+      completed: 'Test Comleted!'
+    show:
+      header: "Passing the test: %{test}"
+      total: "Total questions in the test: %{count}"
+      currently: "You are currently taking a test: %{number}"
+      next: 'Next'
+
+  shared:
+    footer:
+      author: 'Author: Vitaliy Supron'
+      project_description: 'The project is connected with the passage of tests on various topics'
+      course: 'Educational project at Thinknetica online school'
+    header:
+      login: 'Login'
+      logout: LogOut
+      singup: 'Singup'
+      project_name: 'TestGuru'
+      welcome: 'Welcome:'
+
+  users:
+    sessions:
+        notice: "Hello, %{user}"
+
+  controllers:
+    admin:
+      base:
+        unauthorized: 'You are not authorized to view this page.'
+
+  mailers:
+    tests:
+      completed_test:
+        subject: 'You just completed the TestGuru test!'
+        greeting: 'Horray!'
+        message:  "Congratulations! You have completed the test: %{test_name}"
+        more: 'More tests here'

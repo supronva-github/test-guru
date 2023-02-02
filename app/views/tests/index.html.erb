@@ -1,11 +1,11 @@
 <table border="1">
-   <caption>Список тестов: </caption>
+   <caption><%= t('.header')%></caption>
   <tr>
-    <th> Id </th>
-    <th> Test name </th>
-    <th> Level </th>
-    <th> Count questions </th>
-    <th> Start test </th>
+    <th><%= t('.id')%></th>
+    <th><%= t('.name')%></th>
+    <th><%= t('.level')%></th>
+    <th><%= t('.count_question')%></th>
+    <th><%= t('.start')%></th>
   </tr>
  
   <%= render @tests %>

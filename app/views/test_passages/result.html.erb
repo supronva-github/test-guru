@@ -1,4 +1,4 @@
-<h1>Тест завершен</h1>
+<h1><%= t('.completed')%></h1>
 <p><%= test_result(@test_passage) %></p>
 
-<%= link_to 'Back', tests_path %>
+<%= link_to t('common.back'), tests_path %>

@@ -25,6 +25,8 @@ ru:
         unconfirmed_email: Неподтвержденный email
         unlock_token: Токен разблокировки
         updated_at: Дата обновления
+        last_name: Имя
+        first_name: Фамилия
     models:
       user:
         few: Пользователя
@@ -36,6 +38,7 @@ ru:
       confirmed: Ваш адрес эл. почты успешно подтвержден.
       new:
         resend_confirmation_instructions: Выслать повторно письмо с активацией
+        resend_confirmation: Отправить повторно письмо
       send_instructions: В течение нескольких минут вы получите письмо с инструкциями по подтверждению адреса эл. почты.
       send_paranoid_instructions: Если ваш адрес эл. почты есть в системе, то в течение нескольких минут вы получите письмо с инструкциями по его подтверждению.
     failure:
@@ -106,6 +109,7 @@ ru:
         we_need_your_current_password_to_confirm_your_changes: введите текущий пароль для подтверждения изменений
       new:
         sign_up: Регистрация
+        minimum_password_length: "минимум %{length} знаков"
       signed_up: Добро пожаловать! Вы успешно зарегистрировались.
       signed_up_but_inactive: Вы успешно зарегистрированы. Однако, вы не можете войти в систему, потому что ваша учетная запись не активирована.
       signed_up_but_locked: Вы успешно зарегистрированы. Однако, вы не можете войти в систему, потому что ваша учетная запись заблокирована.
@@ -128,11 +132,6 @@ ru:
         sign_in: Войти
         sign_in_with_provider: 'Войти с помощью: %{provider}'
         sign_up: Регистрация
-      minimum_password_length:
-        few: "(минимум %{count} знака)"
-        many: "(минимум %{count} знаков)"
-        one: "(минимум %{count} знак)"
-        other: "(минимум %{count} знаков)"
     unlocks:
       new:
         resend_unlock_instructions: Выслать подтверждение заново

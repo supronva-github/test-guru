@@ -1,14 +1,14 @@
 <table border="1">
-   <caption>Список тестов: </caption>
+   <caption><%= t('.header')%></caption>
   <tr>
-    <th> Id </th>
-    <th> Test name </th>
-    <th> Level </th>
-    <th> Count questions </th>
-    <th colspan="3"> Action </th>
+    <th><%= t('.id')%></th>
+    <th><%= t('.name')%> </th>
+    <th><%= t('.level')%></th>
+    <th><%= t('.count_question')%></th>
+    <th colspan="3"><%= t('.action')%></th>
   </tr>
  
   <%= render @tests %>
 </table>
 
-<%= link_to 'Create new test', new_admin_test_path %>
+<%= link_to t('.new_test'), new_admin_test_path %>
