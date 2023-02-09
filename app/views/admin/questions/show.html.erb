@@ -1,14 +1,22 @@
- <table border="1">
-   <caption><%= @question.body %></caption>
-  <tr>
-    <th><%= t('.id')%></th>
-    <th><%= t('.answers')%></th>
-    <th><%= t('.correct')%></th>
-    <th colspan="3"><%= t('.action')%></th>
-  </tr>
-   <%= render @question.answers %>
-</table>
+<div class="table-responsive">
+  <h3 class="mt-2 mb-2 text-center"><%= @question.body %></h3>
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th><%= t('.id')%></th>
+        <th><%= t('.answers')%></th>
+        <th><%= t('.correct')%></th>
+        <th colspan="3"><%= t('.action')%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @question.answers %>
+    </tbody>
+  </table>
+</div>
 
-<%= link_to t('.add_answer'), new_admin_question_answer_path(@question) %>
-<%= link_to t('.edit_question'), edit_admin_question_path(@question) %>
-<%= link_to t('common.back'), admin_test_questions_path(@question.test) %>
+<div class="d-flex justify-content-between mt-2">
+  <%= link_to t('common.back'), admin_test_questions_path(@question.test), class: "btn btn-primary mb-3 mt-3" %>
+  <%= link_to t('.add_answer'), new_admin_question_answer_path(@question), class: "btn btn-primary mb-3 mt-3" %>
+  <%= link_to t('.edit_question'), edit_admin_question_path(@question), class: "btn btn-primary mb-3 mt-3" %>
+</div>
