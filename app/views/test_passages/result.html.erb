@@ -1,4 +1,6 @@
-<h1><%= t('.completed')%></h1>
-<p><%= test_result(@test_passage) %></p>
+<div class="container-fluid text-center mt-5">
+  <h1><%= t('.completed')%></h1>
+  <p><%= test_result(@test_passage) %></p>
 
-<%= link_to t('common.back'), tests_path %>
+  <%= link_to t('common.back'), tests_path, class: 'btn btn-primary' %>
+</div>
