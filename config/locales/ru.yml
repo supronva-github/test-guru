@@ -32,7 +32,7 @@ ru:
   helper_methods:
     answer:
       new_record: "Создать новый ответ к вопросу: %{record}"
-      not_new_recordt: "Редактировать ответ к вопросу: %{record}"
+      not_new_record: "Редактировать ответ к вопросу: %{record}"
     question:
       new_record: "Создать новый ответ к вопросу: %{record}"
       not_new_record: "Отредактировать вопрос теста: %{record}"
