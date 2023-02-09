@@ -135,6 +135,7 @@ en:
       singup: 'Singup'
       project_name: 'TestGuru'
       welcome: 'Welcome:'
+      admin: 'Admin Panel'
 
   users:
     sessions:

@@ -1,12 +1,25 @@
-<table border="1">
-   <caption><%= @test.title %></caption>
-  <tr>
-    <th><%= t('.id') %></th>
-    <th><%= t('.question') %></th>
-    <th colspan="3"><%= t('.action') %></th>
-  </tr>
-  <%= render @questions %>
-</table>
-
-<%= link_to t('.new_question'), new_admin_test_question_path %>
-<%= link_to t('common.back'), admin_tests_path %>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h3 class="mt-2 mb-2 text-center"><%= @test.title %></h3>
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th><%= t('.id') %></th>
+            <th><%= t('.question') %></th>
+            <th colspan="3"><%= t('.action') %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @questions %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-md-8">
+      <%= link_to t('.new_question'), new_admin_test_question_path, class: "btn btn-primary mb-3 mt-3" %>
+      <%= link_to t('common.back'), admin_tests_path, class: "btn btn-primary mb-3 mt-3" %>
+    </div>
+  </div>
+</div>

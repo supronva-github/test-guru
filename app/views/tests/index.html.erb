@@ -1,12 +1,15 @@
-<table border="1">
-   <caption><%= t('.header')%></caption>
-  <tr>
-    <th><%= t('.id')%></th>
-    <th><%= t('.name')%></th>
-    <th><%= t('.level')%></th>
-    <th><%= t('.count_question')%></th>
-    <th><%= t('.start')%></th>
-  </tr>
- 
-  <%= render @tests %>
-</table>
+<div class="container">
+  <h3 class="mt-2 mb-2 text-center"><%= t('.header')%></h3>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><%= t('.id')%></th>
+        <th><%= t('.name')%></th>
+        <th><%= t('.level')%></th>
+        <th><%= t('.count_question')%></th>
+        <th><%= t('.start')%></th>
+      </tr>
+    </thead>
+    <%= render @tests %>
+  </table>
+</div>

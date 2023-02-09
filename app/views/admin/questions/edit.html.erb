@@ -1,4 +1,4 @@
 <%= render 'form', test: @test, question: @question %>
  
-<%= link_to t('common.back'), admin_test_questions_path(@question.test) %>
+<%= link_to t('common.back'), admin_test_questions_path(@question.test), class: "btn btn-primary mb-3 mt-3" %>
  
