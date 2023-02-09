@@ -101,6 +101,7 @@ ru:
       singup: 'Регистрация'
       project_name: 'TestGuru'
       welcome: 'Добро пожаловать:'
+      admin: 'Админка'
 
   devise:
     sessions:
