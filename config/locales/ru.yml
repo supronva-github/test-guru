@@ -89,6 +89,10 @@ ru:
       total: "Всего вопросов в тесте:: %{count}"
       currently: "Вы сейчас проходите тест: %{number}"
       next: 'Далее'
+      create_gist: 'Создать gist'
+    gist:
+      success: 'Gist успешно сохранен'
+      failure: 'Во время сохранения gist  произошла ошибка'
 
   shared:
     footer:
