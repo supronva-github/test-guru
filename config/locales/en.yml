@@ -125,7 +125,7 @@ en:
       next: 'Next'
       create_gist: 'Create gist'
     gist:
-      success: 'Gist was successfully created'
+      success: 'Gist was successfully created, link: %{url}'
       failure: 'An error occurred while saving gist'
 
   shared:

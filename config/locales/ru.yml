@@ -91,7 +91,7 @@ ru:
       next: 'Далее'
       create_gist: 'Создать gist'
     gist:
-      success: 'Gist успешно сохранен'
+      success: 'Gist успешно сохранен, ссылка: %{url}'
       failure: 'Во время сохранения gist  произошла ошибка'
 
   shared:

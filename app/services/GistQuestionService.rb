@@ -7,7 +7,6 @@ class GistQuestionService
     @question = question
     @test = @question.test
     @client = client || Octokit::Client.new(access_token: ACCESS_TOKEN)
-    binding.pry
   end
 
   def call
