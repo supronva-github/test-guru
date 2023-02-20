@@ -2,13 +2,13 @@
 
 class GitHubClient
   ROOT_ENDPOINT = 'https://api.github.com/'
-  ACCESS_TOKEN = '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'
+  ACCESS_TOKEN = 'example'
 
   def initialize
     @http_client = setup_http_client
   end
 
-  def creatre_gist(params)
+  def create_gist(params)
     @http_client.post('gists') do |request|
       request.body = params.to_json
     end

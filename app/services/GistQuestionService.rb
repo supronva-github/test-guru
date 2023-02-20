@@ -1,14 +1,17 @@
 # frozen_string_literal: true
 
 class GistQuestionService
+  ACCESS_TOKEN = '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'
+
   def initialize(question, client: nil)
     @question = question
     @test = @question.test
-    @client = client || GitHubClient.new
+    @client = client || Octokit::Client.new(access_token: ACCESS_TOKEN)
+    binding.pry
   end
 
   def call
-    @client.creatre_gist(gist_params)
+    @client.create_gist(gist_params.to_json)
   end
 
   private
