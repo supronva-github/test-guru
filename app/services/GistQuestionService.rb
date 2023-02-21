@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
 class GistQuestionService
-  ACCESS_TOKEN = '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'
 
   def initialize(question, client: nil)
     @question = question
     @test = @question.test
-    @client = client || Octokit::Client.new(access_token: ACCESS_TOKEN)
+    @client = client || Octokit::Client.new(access_token: ENV['GIST_ACCESS_TOKEN'])
   end
 
   def call
