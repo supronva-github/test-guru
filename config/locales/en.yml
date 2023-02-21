@@ -95,6 +95,7 @@ en:
         action: 'Action'
         new_test: 'Create new test'
         header: 'Test list:'
+        gists: 'Show Gists'
       show:
         id: 'Id'
         question: 'Question'
