@@ -101,8 +101,13 @@ en:
         action: 'Action'
         add_question: 'Add Question'
         list_questions: "List of questions for the test: %{test}"
-    base:
-      alert: 'You are not authorized to view this page.' 
+    gists:
+      index:
+        title: 'Gists'
+        id: 'Id'
+        question: 'Question'
+        email: 'User email'
+        url: 'URL'
 
   tests:
     index:

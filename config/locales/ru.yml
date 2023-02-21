@@ -69,7 +69,14 @@ ru:
         action: 'Действия'
         add_question: 'Добавить вопрос'
         list_questions: "Список вопросов для теста: %{test}"
-   
+    gists:
+      index:
+        title: 'Гисты'
+        id: 'Номер'
+        question: 'Вопрос'
+        email: 'Email пользователя'
+        url: 'Ссылка на ресурс'
+      
   tests:
     index:
       id: 'Номер'
