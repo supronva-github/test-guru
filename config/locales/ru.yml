@@ -63,13 +63,21 @@ ru:
         action: 'Действия'
         new_test: 'Создать новый тест'
         header: 'Список тестов:'
+        gists: 'Посмотреть Гисты'
       show:
         id: 'Номер'
         question: 'Вопрос'
         action: 'Действия'
         add_question: 'Добавить вопрос'
         list_questions: "Список вопросов для теста: %{test}"
-   
+    gists:
+      index:
+        title: 'Гисты'
+        id: 'Номер'
+        question: 'Вопрос'
+        email: 'Email пользователя'
+        url: 'Ссылка на ресурс'
+      
   tests:
     index:
       id: 'Номер'
@@ -89,6 +97,10 @@ ru:
       total: "Всего вопросов в тесте:: %{count}"
       currently: "Вы сейчас проходите тест: %{number}"
       next: 'Далее'
+      create_gist: 'Создать gist'
+    gist:
+      success: 'Gist успешно сохранен, ссылка: %{url}'
+      failure: 'Во время сохранения gist  произошла ошибка'
 
   shared:
     footer:

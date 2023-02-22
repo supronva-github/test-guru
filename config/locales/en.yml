@@ -95,14 +95,20 @@ en:
         action: 'Action'
         new_test: 'Create new test'
         header: 'Test list:'
+        gists: 'Show Gists'
       show:
         id: 'Id'
         question: 'Question'
         action: 'Action'
         add_question: 'Add Question'
         list_questions: "List of questions for the test: %{test}"
-    base:
-      alert: 'You are not authorized to view this page.' 
+    gists:
+      index:
+        title: 'Gists'
+        id: 'Id'
+        question: 'Question'
+        email: 'User email'
+        url: 'URL'
 
   tests:
     index:
@@ -123,6 +129,10 @@ en:
       total: "Total questions in the test: %{count}"
       currently: "You are currently taking a test: %{number}"
       next: 'Next'
+      create_gist: 'Create gist'
+    gist:
+      success: 'Gist was successfully created, link: %{url}'
+      failure: 'An error occurred while saving gist'
 
   shared:
     footer:
