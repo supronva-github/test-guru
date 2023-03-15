@@ -27,16 +27,24 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+# Authentication
 gem 'devise', '~> 4.0'
+
+# Localization
 gem 'rails-i18n', '~> 6.0.0'
-gem 'jquery-rails'
-gem 'bootstrap', '~> 5.0.00'
 
 # Networking
 gem 'faraday'
 
 # Gist-client
 gem "octokit", "~> 5.0"
+
+# UI
+gem 'jquery-rails'
+gem 'bootstrap', '~> 5.0.00'
+gem 'octicons_helper'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

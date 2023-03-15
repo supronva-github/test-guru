@@ -28,10 +28,14 @@
           <% end %>
           <%= f.password_field :password, class: 'form-control'%>
         </p>
-
+        
         <p>
           <%= f.label :password_confirmation, class: "control-label" %>
           <%= f.password_field :password_confirmation, class: 'form-control'%>
+        </p>
+        <p>
+          <%= octicon 'check', class: 'text-success hide' %>
+          <%= octicon 'alert', class: 'text-danger hide' %>
         </p>
 
         <%= f.submit t('.sign_up'), class: 'btn btn-primary' %>
