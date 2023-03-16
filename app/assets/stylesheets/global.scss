@@ -5,3 +5,16 @@
  .hide {
   display: none;
  }
+
+ .progress-bar {
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.progress-bar-line {
+  width: 1%;
+  height: 20px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+}
