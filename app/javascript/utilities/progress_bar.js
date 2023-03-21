@@ -2,7 +2,7 @@ document.addEventListener('turbolinks:load', function() {
   var progressBar = document.querySelector('.progress-bar')
   
   if (progressBar) {
-  setProgressBar(progressBar)
+    setProgressBar(progressBar)
   }
 })
 
