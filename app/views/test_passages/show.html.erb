@@ -1,5 +1,8 @@
 <div class="container-fluid mt-5">
   <h1 class="text-center"><%= t('.header', test: @test_passage.test.title) %></h1>
+  <%= content_tag :div, class: "progress-bar", data: { questions_count: @test_passage.test.questions.count, current_question_number: @test_passage.current_question.number } do %>
+    <div class="progress-bar-line"></div>
+  <% end %>
   <p><%= t('.total', count: @test_passage.test.questions.count) %></p>
   <% unless @test_passage.completed? %>
     <p class="mb-3"><%= t('.currently', number: @test_passage.current_question.number) %></p>

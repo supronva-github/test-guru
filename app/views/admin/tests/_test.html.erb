@@ -1,9 +1,14 @@
 <tr>
-  <td><%= test.id %></td>
-  <td><%= test.title %></td>
-  <td><%= test.level %></td>
-  <td><%= link_to test.questions.count, admin_test_questions_path(test.id) %></td>
-  <td><%= link_to t('common.edit'), edit_admin_test_path(test) %></td>
-  <td><%= link_to t('common.show'), admin_test_path(test) %></td>
-  <td><%= link_to t('common.delete'), admin_test_path(test), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <td class="align-middle"><%= test.id %></td>
+  <td>
+    <%= content_tag :span, test.title, class: 'test-title', data: { test_id: test.id } %>
+    <%= render 'form_inline', test: test == @test ? @test : test %>
+  </td>
+  <td class="align-middle"><%= test.level %></td>
+  <td class="align-middle"><%= link_to test.questions.count, admin_test_questions_path(test.id) %></td>
+  <td class="align-middle">
+    <%= link_to t('common.edit'), edit_admin_test_path(test), class: 'form-inline-link', data: { test_id: test.id } %>
+  </td>
+  <td class="align-middle"><%= link_to t('common.show'), admin_test_path(test) %></td>
+  <td class="align-middle"><%= link_to t('common.delete'), admin_test_path(test), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </tr>
