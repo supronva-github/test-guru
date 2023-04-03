@@ -36,6 +36,7 @@ gem 'rails-i18n', '~> 6.0.0'
 
 # Networking
 gem 'faraday'
+gem 'faraday-retry', '~> 2.1'
 
 # Gist-client
 gem "octokit", "~> 5.0"
@@ -45,13 +46,13 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 5.0.00'
 gem 'octicons_helper'
 
+gem 'dotenv-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
   gem 'pry'
-  gem 'dotenv-rails'
 end
 
 group :development do
