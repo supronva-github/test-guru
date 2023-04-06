@@ -1,4 +1,4 @@
-# fly.toml file generated for test-guru on 2023-04-04T03:15:18+03:00
+# fly.toml file generated for test-guru on 2023-04-06T03:24:26+03:00
 
 app = "test-guru"
 kill_signal = "SIGINT"
