@@ -1,11 +1,18 @@
 <footer class="page-footer bg-light fixed-bottom">
-  <p class="text-center">
-    <%= current_year %> |
-    <%= t('.author') %>
-    <%= github_url('supronva-github', 'test-guru') %>
-  </p>
-  <p class="text-center">
-    <%= t('.project_description') %> |
-    <%= link_to t('.course'), "https://thinknetica.com/", target: :blank %>
-  </p>
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <p>
+        <%= current_year %> |
+        <%= t('.author') %>
+        <%= github_url('supronva-github', 'test-guru') %>
+      </p>
+      <p class="text-right">
+        <%= t('.project_description') %> |
+        <%= link_to t('.course'), "https://thinknetica.com/", target: :blank %>
+      </p>
+    </div>
+    <div class="text-right">
+      <%= link_to icon('chat-square-heart-fill',"Feedback") %>
+    </div>
+  </div>
 </footer>
