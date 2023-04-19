@@ -10,7 +10,7 @@ class FeedbacksController < ApplicationController
     if @feedback.save
       redirect_to root_path
     else
-      render new
+      render :new
     end
   end
 
