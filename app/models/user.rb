@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :tests, through: :test_passages
   has_many :owner_tests, class_name: 'Test', foreign_key: :author_id
   has_many :gists
+  has_many :feedbacks
 
   validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }, uniqueness: true
   validates :first_name, presence: true
