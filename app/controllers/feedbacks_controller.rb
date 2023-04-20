@@ -8,6 +8,8 @@ class FeedbacksController < ApplicationController
   def create
     @feedback = current_user.feedbacks.new(feedback_params)
     if @feedback.save
+      FeedbacksMailer.feedback_message(@feedback).deliver_now
+      flash["alert-info"] = t('.success')
       redirect_to root_path
     else
       render :new

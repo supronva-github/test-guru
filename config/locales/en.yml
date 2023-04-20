@@ -172,3 +172,9 @@ en:
         greeting: 'Horray!'
         message:  "Congratulations! You have completed the test: %{test_name}"
         more: 'More tests here'
+    feedbacks:
+      feedback_message:
+        subject: 'Feedback of TestGuru'
+        from_user: 'From user'
+        title: 'Topic'
+        body: 'Feedback'

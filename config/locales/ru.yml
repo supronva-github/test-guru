@@ -156,3 +156,9 @@ ru:
         greeting: 'Ура!'
         message:  "Поздравляем! Вы завершили тест: %{test_name}"
         more: 'Больше тестов тут'
+    feedbacks:
+      feedback_message:
+        subject: 'Отзыв о ТестГуру'
+        from_user: 'От пользователя'
+        title: 'Тема'
+        body:  'Отзыв'

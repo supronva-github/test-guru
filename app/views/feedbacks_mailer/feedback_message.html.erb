@@ -1,0 +1,11 @@
+<h1>
+  <%= t('mailers.feedbacks.feedback_message.from_user') %>: <%=@feedback.user.first_name %>
+</h1>
+<%= t('mailers.feedbacks.feedback_message.title') %>:
+<p>
+  <%= @feedback.title %>
+</p>
+<%= t('mailers.feedbacks.feedback_message.body') %>:
+<p>
+  <%= @feedback.body %>
+</p>
