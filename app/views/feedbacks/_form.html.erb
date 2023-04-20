@@ -1,6 +1,7 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-8">
+      <h1><%= t('feedbacks.new.feedback_form') %></h1>
       <%= form_with model: feedback, class: "form-group" do |form| %>
         <%= render 'shared/errors', resource: feedback %>
         <div class="form-group">

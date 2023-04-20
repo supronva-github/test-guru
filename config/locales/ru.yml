@@ -4,6 +4,7 @@ ru:
     edit: 'Редактировать'
     delete: 'Удалить'
     back: 'Назад'
+    return_main_page: 'Возврат на главную страницу'
 
   helpers:
     submit:
@@ -26,6 +27,9 @@ ru:
         title: 'Название'
         level: 'Сложность'
         category_id: 'Категория'
+      feedback:
+        title: 'Тема отзыва'
+        body: 'Обратная связь'
     select:
       prompt: 'Выберите Категорию'
 
@@ -102,11 +106,16 @@ ru:
       success: 'Gist успешно сохранен, ссылка: %{url}'
       failure: 'Во время сохранения gist  произошла ошибка'
 
+  feedbacks:
+    new:
+      feedback_form: 'Форма обратной связи'
+
   shared:
     footer:
       author: 'Автор: Виталий Супрон'
       project_description: 'Проект связан с прохождением тестов различных тематик'
       course: 'Учебный проект в онлайн-школе Thinknetica'
+      feedback: 'Оставить отзыв'
     header:
       login: 'Войти'
       logout: Выйти

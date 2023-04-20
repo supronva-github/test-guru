@@ -5,6 +5,7 @@ en:
       question: 'Question'
       test: 'Test'
       test_passage: 'Test Passage'
+      feedback: 'Feedback'
 
   attributes:
     answer:
@@ -18,6 +19,9 @@ en:
       category: 'Category'
     test_passage:
       correct_questions: 'Correct questions'
+    feedback:
+      title: 'Topic'
+      body: 'Feedback'
 
   errors:
     messages:

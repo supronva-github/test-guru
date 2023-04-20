@@ -36,6 +36,7 @@ en:
     delete: 'Delete'
     back: 'Back'
     signup: 'Sign Up'
+    return_main_page: 'Return to main page'
 
   helpers:
     submit:
@@ -58,6 +59,9 @@ en:
         title: 'Title'
         level: 'Level'
         category_id: 'Category'
+      feedback:
+        title: 'Topic'
+        body: 'Feedback'
     select:
       prompt: 'Select Category'
 
@@ -134,11 +138,16 @@ en:
       success: 'Gist was successfully created, link: %{url}'
       failure: 'An error occurred while saving gist'
 
+  feedbacks:
+    new:
+      feedback_form: 'Feedback form'
+
   shared:
     footer:
       author: 'Author: Vitaliy Supron'
       project_description: 'The project is connected with the passage of tests on various topics'
       course: 'Educational project at Thinknetica online school'
+      feedback: 'Feedback'
     header:
       login: 'Login'
       logout: LogOut
