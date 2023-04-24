@@ -6,6 +6,7 @@
   </td>
   <td class="align-middle"><%= test.level %></td>
   <td class="align-middle"><%= link_to test.questions.count, admin_test_questions_path(test.id) %></td>
+  <td class="align-middle"><%= test.active %></td>
   <td class="align-middle">
     <%= link_to t('common.edit'), edit_admin_test_path(test), class: 'form-inline-link', data: { test_id: test.id } %>
   </td>

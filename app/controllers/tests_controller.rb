@@ -1,6 +1,6 @@
 class TestsController < ApplicationController
   def index
-    @tests = Test.with_questions
+    @tests = Test.ready_test
   end
 
   def start

@@ -17,6 +17,7 @@ ru:
       title: 'Название'
       level: 'Сложность'
       category: 'Категория'
+      active: 'Активный'
     test_passage:
       correct_questions: 'Правильные ответы'
     feedback:

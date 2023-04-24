@@ -15,6 +15,10 @@
           <%= form.label :category_id %>
           <%= form.collection_select :category_id, Category.all, :id, :title, prompt: true, class: 'dropdown-menu' %>
         </p>
+        <p>
+          <%= form.label :active, class: "form-check-label" %>
+          <%= form.check_box :active, class: "form-check-input" %>
+        </p>
       </div>
       <div class="mt-2">
         <%= form.submit class: "btn btn-primary" %>

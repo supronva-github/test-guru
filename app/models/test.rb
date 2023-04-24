@@ -14,6 +14,7 @@ class Test < ApplicationRecord
   scope :by_level, ->(level) { where(level: level) }
   scope :by_category, ->(name) { joins(:category).where(categories: { title: name }) }
   scope :with_questions, -> { joins(:questions).distinct }
+  scope :ready_test, -> { where(active: true) }
 
   def self.sort_by_category(name)
     by_category(name).order(title: :desc).pluck(:title)

@@ -27,6 +27,7 @@ ru:
         title: 'Название'
         level: 'Сложность'
         category_id: 'Категория'
+        active: 'Активный'
       feedback:
         title: 'Тема отзыва'
         body: 'Обратная связь'
@@ -64,6 +65,7 @@ ru:
         name: 'Название теста'
         level: 'Сложность'
         count_question: 'Количество вопросов'
+        active: 'Активный/неактивный'
         action: 'Действия'
         new_test: 'Создать новый тест'
         header: 'Список тестов:'
@@ -73,6 +75,7 @@ ru:
         question: 'Вопрос'
         action: 'Действия'
         add_question: 'Добавить вопрос'
+        edit_test: 'Редактировать тест'
         list_questions: "Список вопросов для теста: %{test}"
     gists:
       index:

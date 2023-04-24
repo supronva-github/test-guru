@@ -59,6 +59,7 @@ en:
         title: 'Title'
         level: 'Level'
         category_id: 'Category'
+        active: 'Active'
       feedback:
         title: 'Topic'
         body: 'Feedback'
@@ -96,6 +97,7 @@ en:
         name: 'Test name'
         level: 'Level'
         count_question: 'Count Question'
+        active: 'Active/Inactive'
         action: 'Action'
         new_test: 'Create new test'
         header: 'Test list:'
@@ -105,6 +107,7 @@ en:
         question: 'Question'
         action: 'Action'
         add_question: 'Add Question'
+        edit_test: 'Edit Test'
         list_questions: "List of questions for the test: %{test}"
     gists:
       index:

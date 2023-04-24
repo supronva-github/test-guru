@@ -17,6 +17,7 @@ en:
       title: 'Title'
       level: 'Level'
       category: 'Category'
+      active: 'Active'
     test_passage:
       correct_questions: 'Correct questions'
     feedback:
