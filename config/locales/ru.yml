@@ -4,6 +4,7 @@ ru:
     edit: 'Редактировать'
     delete: 'Удалить'
     back: 'Назад'
+    return_main_page: 'Возврат на главную страницу'
 
   helpers:
     submit:
@@ -26,6 +27,10 @@ ru:
         title: 'Название'
         level: 'Сложность'
         category_id: 'Категория'
+        active: 'Активный'
+      feedback:
+        title: 'Тема отзыва'
+        body: 'Обратная связь'
     select:
       prompt: 'Выберите Категорию'
 
@@ -60,6 +65,7 @@ ru:
         name: 'Название теста'
         level: 'Сложность'
         count_question: 'Количество вопросов'
+        active: 'Активный/неактивный'
         action: 'Действия'
         new_test: 'Создать новый тест'
         header: 'Список тестов:'
@@ -69,6 +75,7 @@ ru:
         question: 'Вопрос'
         action: 'Действия'
         add_question: 'Добавить вопрос'
+        edit_test: 'Редактировать тест'
         list_questions: "Список вопросов для теста: %{test}"
     gists:
       index:
@@ -102,11 +109,16 @@ ru:
       success: 'Gist успешно сохранен, ссылка: %{url}'
       failure: 'Во время сохранения gist  произошла ошибка'
 
+  feedbacks:
+    new:
+      feedback_form: 'Форма обратной связи'
+
   shared:
     footer:
       author: 'Автор: Виталий Супрон'
       project_description: 'Проект связан с прохождением тестов различных тематик'
       course: 'Учебный проект в онлайн-школе Thinknetica'
+      feedback: 'Оставить отзыв'
     header:
       login: 'Войти'
       logout: Выйти
@@ -147,3 +159,9 @@ ru:
         greeting: 'Ура!'
         message:  "Поздравляем! Вы завершили тест: %{test_name}"
         more: 'Больше тестов тут'
+    feedbacks:
+      feedback_message:
+        subject: 'Отзыв о ТестГуру'
+        from_user: 'От пользователя'
+        title: 'Тема'
+        body:  'Отзыв'

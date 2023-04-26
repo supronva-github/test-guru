@@ -12,7 +12,8 @@ puts 'Data is loading'
 users = User.create([
                       { first_name: 'Vitaliy', last_name: 'Bax', email: 'v.bax@gmail.com', password: 'qwerty' },
                       { first_name: 'Roma', last_name: 'Kirpich', email: 'r.kirpich@gmail.com', password: 'qwerty' },
-                      { first_name: 'Maksim', last_name: 'Orel', email: 'm.orel@gmail.com', password: 'qwerty' }
+                      { first_name: 'Maksim', last_name: 'Orel', email: 'm.orel@gmail.com', password: 'qwerty' },
+                      { first_name: 'Admin', last_name: 'Admin', email: 'vsprojecttestguru2023@gmail.com', password: 'qwerty4400', type: 'Admin'}
                     ])
 
 categories = Category.create([

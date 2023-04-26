@@ -5,6 +5,7 @@ ru:
       question: 'Вопрос'
       test: 'Тест'
       test_passage: 'Прохождение Теста'
+      feedback: 'Отзыв'
 
   attributes:
     answer:
@@ -16,8 +17,12 @@ ru:
       title: 'Название'
       level: 'Сложность'
       category: 'Категория'
+      active: 'Активный'
     test_passage:
       correct_questions: 'Правильные ответы'
+    feedback:
+      title: 'Тема отзыва'
+      body: 'Обратная связь'
 
   errors:
     messages:

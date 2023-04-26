@@ -36,6 +36,7 @@ en:
     delete: 'Delete'
     back: 'Back'
     signup: 'Sign Up'
+    return_main_page: 'Return to main page'
 
   helpers:
     submit:
@@ -58,6 +59,10 @@ en:
         title: 'Title'
         level: 'Level'
         category_id: 'Category'
+        active: 'Active'
+      feedback:
+        title: 'Topic'
+        body: 'Feedback'
     select:
       prompt: 'Select Category'
 
@@ -92,6 +97,7 @@ en:
         name: 'Test name'
         level: 'Level'
         count_question: 'Count Question'
+        active: 'Active/Inactive'
         action: 'Action'
         new_test: 'Create new test'
         header: 'Test list:'
@@ -101,6 +107,7 @@ en:
         question: 'Question'
         action: 'Action'
         add_question: 'Add Question'
+        edit_test: 'Edit Test'
         list_questions: "List of questions for the test: %{test}"
     gists:
       index:
@@ -134,11 +141,16 @@ en:
       success: 'Gist was successfully created, link: %{url}'
       failure: 'An error occurred while saving gist'
 
+  feedbacks:
+    new:
+      feedback_form: 'Feedback form'
+
   shared:
     footer:
       author: 'Author: Vitaliy Supron'
       project_description: 'The project is connected with the passage of tests on various topics'
       course: 'Educational project at Thinknetica online school'
+      feedback: 'Feedback'
     header:
       login: 'Login'
       logout: LogOut
@@ -163,3 +175,9 @@ en:
         greeting: 'Horray!'
         message:  "Congratulations! You have completed the test: %{test_name}"
         more: 'More tests here'
+    feedbacks:
+      feedback_message:
+        subject: 'Feedback of TestGuru'
+        from_user: 'From user'
+        title: 'Topic'
+        body: 'Feedback'
