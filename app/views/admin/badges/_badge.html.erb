@@ -1,0 +1,8 @@
+<tr>
+  <td class="align-middle"><%= badge.id %></td>
+  <td class="align-middle"><%= badge.name %></td>
+  <td class="align-middle"><%= image_tag(badge.image.url, width: 200, height: 200)%></td>
+  <td class="align-middle"><%= link_to t('common.edit'), edit_admin_badge_path(badge) %></td>
+  <td class="align-middle"><%= link_to t('common.show'), admin_badge_path(badge) %></td>
+  <td class="align-middle"><%= link_to t('common.delete'), admin_badge_path(badge), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

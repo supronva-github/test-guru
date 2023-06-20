@@ -102,6 +102,7 @@ en:
         new_test: 'Create new test'
         header: 'Test list:'
         gists: 'Show Gists'
+        badges: 'Show Badges'
       show:
         id: 'Id'
         question: 'Question'
@@ -116,6 +117,14 @@ en:
         question: 'Question'
         email: 'User email'
         url: 'URL'
+    badges:
+      index:
+        id: 'Id'
+        name: 'Badge name'
+        image: 'Badge image'
+        action: 'Action'
+        new_badge: 'Create new badge'
+        header: 'Badge list:'
 
   tests:
     index:
