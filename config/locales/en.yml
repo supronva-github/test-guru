@@ -134,6 +134,7 @@ en:
       count_question: 'Count Question'
       start: 'Start'
       header: 'List of available tests:'
+      my_badges: 'Show my Badges'
     test:
       start: 'Start'
 
@@ -153,6 +154,12 @@ en:
   feedbacks:
     new:
       feedback_form: 'Feedback form'
+
+  badges:
+    my_badges:
+      name: 'Badge name'
+      image: 'Badge image'
+      header: 'My Badges list:'
 
   shared:
     footer:

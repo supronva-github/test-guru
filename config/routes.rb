@@ -18,7 +18,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :badges, only: :index
+  get 'my_badges', to: 'badges#my_badges'
 
   resources :feedbacks, only: %i[new create]
   

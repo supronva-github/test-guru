@@ -91,8 +91,8 @@ ru:
         name: 'Название Бейджа'
         image: 'Изображение Бейджа'
         action: 'Действия'
-        new_badge: 'Создать новый бейдж'
-        header: 'Список бейджев:'
+        new_badge: 'Создать новый  Бейдж'
+        header: 'Список Бейджей:'
       
   tests:
     index:
@@ -102,6 +102,7 @@ ru:
       count_question: 'Количество вопросов'
       start: 'Пройти тест'
       header: 'Список доступных тестов:'
+      my_badges: 'Показать мои Бейджи'
     test:
       start: 'Начать'
 
@@ -121,6 +122,12 @@ ru:
   feedbacks:
     new:
       feedback_form: 'Форма обратной связи'
+  
+  badges:
+    my_badges:
+      name: 'Название Бейджа'
+      image: 'Изображение Бейджа'
+      header: 'Список моих Бейджей:'
 
   shared:
     footer:
