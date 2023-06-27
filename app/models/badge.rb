@@ -3,7 +3,7 @@ class Badge < ApplicationRecord
   has_many :users, through: :user_badges
   belongs_to :rule, class_name: 'BadgeRule', foreign_key: :rule_id
 
-  validates :name, :image, presence: true
+  validates :name, :image, :rule, presence: true
 
   mount_uploader :image, ImageUploader
 end

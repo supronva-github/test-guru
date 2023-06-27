@@ -63,8 +63,12 @@ en:
       feedback:
         title: 'Topic'
         body: 'Feedback'
+      badge:
+        name: 'Name'
+        rule_id: 'Rule'
     select:
       prompt: 'Select Category'
+      rule: 'Select Rule'
 
   helper_methods:
     answer:
@@ -125,6 +129,7 @@ en:
         action: 'Action'
         new_badge: 'Create new badge'
         header: 'Badge list:'
+        rule: 'Badge rule'
 
   tests:
     index:

@@ -31,8 +31,12 @@ ru:
       feedback:
         title: 'Тема отзыва'
         body: 'Обратная связь'
+      badge:
+        name: 'Название'
+        rule_id: 'Правило'
     select:
       prompt: 'Выберите Категорию'
+      rule: 'Выбирте Правило'
 
   helper_methods:
     answer:
@@ -93,6 +97,7 @@ ru:
         action: 'Действия'
         new_badge: 'Создать новый  Бейдж'
         header: 'Список Бейджей:'
+        rule: 'Правило выдачи Бейджа'
       
   tests:
     index:
