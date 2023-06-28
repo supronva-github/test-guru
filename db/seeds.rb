@@ -56,4 +56,15 @@ answers = Answer.create([
                           { body: 'Абстракция, наследование, инкапсуляция, полиморфизм', correct: true,
                             question: questions[0] }
                         ])
+
+                        rule = BadgeRule.create([
+                          { name: 'achievement back-end test', parameter: 'category_complete', options: 'Back-end' },
+                          { name: 'achievement front-end test', parameter: 'category_complete', options: 'Front-stack' },
+                          { name: 'achievement dev-ops test', parameter: 'category_complete', options: 'DevOps' },
+                          { name: 'achievement for the first try', parameter: 'first_try', options: '' },
+                          { name: 'achievement the 1-st level test', parameter: 'level_complete', options: '1' },
+                          { name: 'achievementthe 2-nd level test', parameter: 'level_complete', options: '2' },
+                          { name: 'achievement the 3-nd level test', parameter: 'level_complete', options: '3' }
+                        ])
+                        
 puts 'Data loaded!'
