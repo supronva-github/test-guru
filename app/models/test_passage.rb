@@ -22,7 +22,7 @@ class TestPassage < ApplicationRecord
     (correct_questions.to_f * 100 / test.questions.count).to_i
   end
   
-  def successfully?
+  def finished?
     completed? && success?
   end
 

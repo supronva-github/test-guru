@@ -6,14 +6,10 @@ class AchievementService
   end
 
   def call
+
     Badge.all.each do |badge|
-      case badge.rule.parameter
-      when 'category_complete'
-        reward(badge) if category_complete?(badge.rule.options)
-      when 'first_try'
-        reward(badge) if first_try?
-      when 'level_complete'
-        reward(badge) if level_complete?(badge.rule.options.to_i)
+      if send("#{badge.rule.parameter}?", badge.rule.options)
+        reward(badge)
       end
     end
   end
@@ -23,20 +19,24 @@ class AchievementService
   def reward(badge)
     @user.badges << badge
   end
-
-  def successful_test?
-    @test_passage.successfully?
-  end
-
-  def first_try?
-    successful_test? && @user.tests.where(id: @test.id).count == 1
+ 
+  def first_try?(_)
+    @user.test_passages.where(test_id: @test.id).count == 1
   end
 
   def category_complete?(category)
-    successful_test? && @test.category.title == category
+    all_ready_tests_by_category = Test.ready_test.by_category(category)
+    
+    user_finished_all_tests_by_category = all_ready_tests_by_category.all? do |test|
+      @user.test_passages.where(test_id: test.id, finished: true).exists?
+    end
   end
 
   def level_complete?(level)
-    successful_test? && @test.level == level
+    all_ready_tests_by_level = Test.ready_test.by_level(level)
+
+    user_finished_all_tests_by_level = all_ready_tests_by_level.all? do |test|
+      @user.test_passages.where(test_id: test.id, finished: true).exists?
+    end
   end
 end
