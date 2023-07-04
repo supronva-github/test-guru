@@ -46,7 +46,16 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 5.0.00'
 gem 'octicons_helper'
 
+# ENV
 gem 'dotenv-rails'
+
+# S3 services
+# gem 'aws-sdk-s3'
+gem 'fog'
+
+# Image upload
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

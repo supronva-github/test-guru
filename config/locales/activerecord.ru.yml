@@ -23,6 +23,9 @@ ru:
     feedback:
       title: 'Тема отзыва'
       body: 'Обратная связь'
+    badge:
+      name: 'Название бейджа'
+      image: 'Изображение бейджа'
 
   errors:
     messages:

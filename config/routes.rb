@@ -18,6 +18,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'my_badges', to: 'badges#my_badges'
+
   resources :feedbacks, only: %i[new create]
   
   namespace :admin do
@@ -28,5 +30,6 @@ Rails.application.routes.draw do
       end
     end
     resources :gists, only: :index
+    resources :badges
   end
 end

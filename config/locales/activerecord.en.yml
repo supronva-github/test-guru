@@ -23,6 +23,9 @@ en:
     feedback:
       title: 'Topic'
       body: 'Feedback'
+    badge:
+      name: 'Badge name'
+      image: 'Badge image'
 
   errors:
     messages:
