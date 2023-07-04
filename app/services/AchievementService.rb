@@ -18,7 +18,7 @@ class AchievementService
   end
 
   def first_try?(_)
-    @user.test_passages.where(test_id: @test.id, finished: true).count == 1
+    @user.test_passages.where(test_id: @test.id).count == 1
   end
 
   def category_complete?(category)
