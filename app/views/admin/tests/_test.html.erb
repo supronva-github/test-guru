@@ -5,6 +5,7 @@
     <%= render 'form_inline', test: test == @test ? @test : test %>
   </td>
   <td class="align-middle"><%= test.level %></td>
+  <td class="align-middle"><%= test.duration_time %></td>
   <td class="align-middle"><%= link_to test.questions.count, admin_test_questions_path(test.id) %></td>
   <td class="align-middle"><%= test.active %></td>
   <td class="align-middle">

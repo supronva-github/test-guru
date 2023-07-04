@@ -18,6 +18,7 @@ ru:
       level: 'Сложность'
       category: 'Категория'
       active: 'Активный'
+      duration_time: 'Время продолжительности'
     test_passage:
       correct_questions: 'Правильные ответы'
     feedback:

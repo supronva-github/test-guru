@@ -18,6 +18,7 @@ en:
       level: 'Level'
       category: 'Category'
       active: 'Active'
+      duration_time: 'Duration time'
     test_passage:
       correct_questions: 'Correct questions'
     feedback:

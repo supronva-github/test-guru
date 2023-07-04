@@ -60,6 +60,7 @@ en:
         level: 'Level'
         category_id: 'Category'
         active: 'Active'
+        duration_time: 'Duration time (minutes)'
       feedback:
         title: 'Topic'
         body: 'Feedback'
@@ -107,6 +108,7 @@ en:
         header: 'Test list:'
         gists: 'Show Gists'
         badges: 'Show Badges'
+        duration_time: 'Duration time (minutes)'
       show:
         id: 'Id'
         question: 'Question'
@@ -140,6 +142,7 @@ en:
       start: 'Start'
       header: 'List of available tests:'
       my_badges: 'Show my Badges'
+      duration_time: 'Duration time (minutes)'
     test:
       start: 'Start'
 
