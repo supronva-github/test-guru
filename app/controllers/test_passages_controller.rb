@@ -1,6 +1,6 @@
 class TestPassagesController < ApplicationController
   before_action :find_test_passage, only: %i[show result update gist]
-  before_action :get_end_time, only: %i[update result]
+  before_action :get_end_time, only: %i[update result show]
   before_action :check_end_time, only: %i[update]
 
   def show; end

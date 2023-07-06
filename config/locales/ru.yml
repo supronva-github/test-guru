@@ -123,6 +123,7 @@ ru:
       currently: "Вы сейчас проходите тест: %{number}"
       next: 'Далее'
       create_gist: 'Создать gist'
+      time_left: 'Оставшееся время:'
     gist:
       success: 'Gist успешно сохранен, ссылка: %{url}'
       failure: 'Во время сохранения gist  произошла ошибка'

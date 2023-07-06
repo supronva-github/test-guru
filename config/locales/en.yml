@@ -155,6 +155,7 @@ en:
       currently: "You are currently taking a test: %{number}"
       next: 'Next'
       create_gist: 'Create gist'
+      time_left: 'Time left:'
     gist:
       success: 'Gist was successfully created, link: %{url}'
       failure: 'An error occurred while saving gist'

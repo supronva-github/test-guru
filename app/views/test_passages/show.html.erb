@@ -3,6 +3,9 @@
   <%= content_tag :div, class: "progress-bar", data: { questions_count: @test_passage.test.questions.count, current_question_number: @test_passage.current_question.number } do %>
     <div class="progress-bar-line"></div>
   <% end %>
+  <p>
+    <%= t('.time_left') %> <%= content_tag :span, '', class: 'timer', data: { timer: @test_passage.test.duration_time, id: @test_passage.id } %>
+  </p>
   <p><%= t('.total', count: @test_passage.test.questions.count) %></p>
   <% unless @test_passage.completed? %>
     <p class="mb-3"><%= t('.currently', number: @test_passage.current_question.number) %></p>
