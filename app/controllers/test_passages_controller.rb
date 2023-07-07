@@ -1,13 +1,10 @@
 class TestPassagesController < ApplicationController
   before_action :find_test_passage, only: %i[show result update gist]
-  before_action :get_end_time, only: %i[update result show]
-  before_action :check_end_time, only: %i[update]
+  before_action :check_timer, only: :update
 
   def show; end
 
-  def result
-    session[:"end_time_#{@test_passage.id}"] = nil
-  end
+  def result; end
 
   def update
     @test_passage.accept!(params[:answer_ids])
@@ -45,14 +42,8 @@ class TestPassagesController < ApplicationController
 
   private
 
-  def get_end_time
-    @end_time = session[:"end_time_#{@test_passage.id}"]
-  end
-
-  def check_end_time
-    if @end_time.present? && @end_time <= Time.now
-      redirect_to result_test_passage_path(@test_passage)
-    end
+  def check_timer
+    redirect_to result_test_passage_path(@test_passage) if @test_passage.time_over?
   end
 
   def find_test_passage

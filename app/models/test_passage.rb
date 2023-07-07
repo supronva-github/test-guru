@@ -29,6 +29,22 @@ class TestPassage < ApplicationRecord
   def success?
     percent_correct_answers >= SUCCESS_RATE
   end
+  
+  def timer_on?
+    !test.duration_time.zero?
+  end
+  
+  def time_over?
+    if timer_on?
+      (Time.current - created_at) / 60 >= test.duration_time
+    else
+      false
+    end
+  end
+
+  def remaining_time
+    remaining_minutes = (test.duration_time - (Time.current - created_at) / 60).to_i if !time_over?
+  end
 
   private
   
