@@ -12,6 +12,10 @@
           <%= form.number_field :level, id: :test_level, class: 'form-control'  %>
         </p>
         <p>
+          <%= form.label :duration_time %>
+          <%= form.number_field :duration_time, id: :test_duration_time, class: 'form-control'  %>
+        </p>
+        <p>
           <%= form.label :category_id %>
           <%= form.collection_select :category_id, Category.all, :id, :title, prompt: true, class: 'dropdown-menu' %>
         </p>

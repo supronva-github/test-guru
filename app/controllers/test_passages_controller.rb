@@ -1,5 +1,6 @@
 class TestPassagesController < ApplicationController
   before_action :find_test_passage, only: %i[show result update gist]
+  before_action :check_timer, only: :update
 
   def show; end
 
@@ -40,6 +41,10 @@ class TestPassagesController < ApplicationController
   end
 
   private
+
+  def check_timer
+    redirect_to result_test_passage_path(@test_passage) if @test_passage.time_over?
+  end
 
   def find_test_passage
     @test_passage = TestPassage.find(params[:id])
